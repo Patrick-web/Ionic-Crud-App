@@ -1,4 +1,4 @@
-import { IonContent, IonItem,IonAlert, IonLabel, IonLoading, IonRouterLink, IonInput, IonButton, IonHeader, IonPage, IonTitle, IonToolbar, useIonViewWillEnter } from '@ionic/react';
+import { IonContent, IonItem, IonAlert, IonLabel, IonLoading, IonRouterLink, IonInput, IonButton, IonHeader, IonPage, IonTitle, IonToolbar, useIonViewWillEnter } from '@ionic/react';
 import React, { useState } from 'react';
 import { useHistory } from "react-router";
 import { signUp, validEntries } from '../utils/index'
@@ -9,9 +9,6 @@ const Signup: React.FC = () => {
     const history = useHistory();
     const [showLoading, setShowLoading] = useState(false);
     const [showAlert, setShowAlert] = useState(false);
-
-    useIonViewWillEnter(() => console.log("object"))
-
     const [email, setEmail] = useState("eve.holt@reqres.in");
     const [password, setPassword] = useState("pistol");
 
@@ -35,7 +32,7 @@ const Signup: React.FC = () => {
         <IonPage>
             <IonHeader  >
                 <IonToolbar color="primary" >
-                    <IonTitle class="ion-text-center">Sign Up</IonTitle>
+                    <IonTitle class="ion-text-center">Register</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent class="ion-padding">
@@ -45,13 +42,13 @@ const Signup: React.FC = () => {
                     onDidDismiss={() => setShowLoading(false)}
                 />
 
-        <IonAlert
-          isOpen={showAlert}
-          onDidDismiss={() => setShowAlert(false)}
-          header={'Alert'}
-          message={'Please enter valid email and password'}
-          buttons={[{ text: 'Ok', role: 'cancel' }]}
-        />
+                <IonAlert
+                    isOpen={showAlert}
+                    onDidDismiss={() => setShowAlert(false)}
+                    header={'Alert'}
+                    message={'Please enter valid email and password'}
+                    buttons={[{ text: 'Ok', role: 'cancel' }]}
+                />
                 <div className="flex col between">
                     <div>
                         <IonItem class="ion-margin-bottom ion-margin-top">

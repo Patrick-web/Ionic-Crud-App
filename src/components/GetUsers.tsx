@@ -26,7 +26,7 @@ const GetUsers: React.FC = () => {
                 setShowPopover(true)
             })
             .catch(function (error) {
-                console.log(error);
+                alert("User not Found")
             })
     }
     const getAllUsers = () => {
@@ -77,7 +77,7 @@ const GetUsers: React.FC = () => {
             </IonItem>
             <IonItem>
                 <IonButton onClick={() => getSingleUser()} color="primary" >Fetch Single User</IonButton>
-                <IonButton onClick={() => getAllUsers()} color="secondary" >Get all  Usesr</IonButton>
+                <IonButton onClick={() => getAllUsers()} color="secondary" >Get all  Users</IonButton>
             </IonItem>
 
         </IonCard>

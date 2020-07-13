@@ -27,7 +27,7 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar color="secondary">
-          <IonTitle class="ion-text-center"><h1>Users</h1></IonTitle>
+          <IonTitle class="ion-text-center"><h1>Home</h1></IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent >
