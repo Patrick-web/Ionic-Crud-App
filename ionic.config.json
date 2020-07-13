@@ -1,0 +1,7 @@
+{
+  "name": "emplyr",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

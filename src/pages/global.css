@@ -1,0 +1,41 @@
+.flex{
+    display: flex;
+    height:100%
+}
+.col {
+    flex-direction: column
+}
+.row{
+    flex-direction: row
+}
+.between{
+    justify-content: space-between
+}
+.around{
+    justify-content: space-around
+}
+.evenly{
+    justify-content: space-evenly
+}
+.center{
+    justify-content: center
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.colorPreview{
+    background: purple;
+    height: 100px;
+    width: 100%;
+}
+.pantonePreview{
+    background: purple;
+    height: 200px;
+}
+.shrink{
+    max-height: 100px
+}
+.preview{
+    height: 80px;
+}
